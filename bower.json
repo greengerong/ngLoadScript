@@ -1,0 +1,20 @@
+{
+  "name": "ng-loadScript",
+  "version": "0.0.0",
+  "authors": [
+    "greengerongg <grzx2210@163.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.2.13",
+    "angular-mocks": "~1.2.13",
+    "jquery": "~2.1.0"
+  }
+}

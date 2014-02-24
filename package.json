@@ -1,0 +1,16 @@
+{
+    "name": "ng-getScript",
+    "version": "0.0.1",
+    "description": "get script for angular",
+    "main": "index.html",
+    "scripts": {
+    },
+    "keywords": [
+        "getscript",
+        "ng"
+    ],
+    "author": "greengerong",
+    "license": "BSD-2-Clause",
+    "devDependencies": {
+    }
+}

@@ -1,0 +1,44 @@
+<html id="ng-app" ng-app="app">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>load script</title>
+    <script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    <script type="text/javascript" src="lib/loadScript.js"></script>
+</head>
+<body ng-controller="demoCtrl as demo">
+<div>
+    <h1>demo for load script</h1>
+    <pre>loaded: {{demo.loaded | json}}</pre>
+
+    <p>
+        JiaThis™“分享到”侧栏代码：
+        使用说明： 复制并粘贴下面的JS代码,放到您的网页，可以在
+
+    <body>和</body>
+    的之间网页的任意位置放置。如果您的网站使用的模板，您也可以复制代码到您的模板，按钮将在所有网页自动出现。
+    效果预览： ← 参考页面左侧的浮窗效果
+    </p>
+</div>
+<script type="text/javascript">
+    angular.module("app", ["green.script"])
+            .controller("demoCtrl", [function () {
+                var vm = this;
+
+                vm.callback = function () {
+                    vm.loaded = true;
+                };
+
+                return vm;
+            }]);
+</script>
+
+<!-- JiaThis Button BEGIN -->
+<script type="text/javascript">
+    var jiathis_config = {data_track_clickback: 'true'};
+</script>
+
+<load-script src="'http://v3.jiathis.com/code/jiathis_r.js?move=0&amp;uid=1390461225091792'"
+             call-back="demo.callback" charset="utf-8"></load-script>
+</body>
+</html>
